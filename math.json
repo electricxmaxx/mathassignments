@@ -1,188 +1,1102 @@
 [
-  { "title": "2048", "url": "2048.html", "image": "https://ik.imagekit.io/nowebfilternovember/images2048.png" },
-  { "title": "Age of War", "url": "ageofwar.html", "image": "https://ik.imagekit.io/nowebfilternovember/imagesageofwar.png" },
-  { "title": "3D Geometry Dash", "url": "3dgeodash.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(58).jpg" },
-  { "title": "Jelly Mario", "url": "jellymariofixed.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(5).png" },
-  { "title": "Age of War 2", "url": "https://cdn.gitdelivr.in/gh/electricxmaxx/mathassignments/main/Age of War 2.htmll", "image": "https://ik.imagekit.io/nowebfilternovember/dora_ageofwar2_title.jpg" },
-  { "title": "Agario Lite", "url": "agariolite.html", "image": "https://ik.imagekit.io/nowebfilternovember/Agar.io_Logo.png" },
-  { "title": "Among Us", "url": "amongus.html", "image": "https://ik.imagekit.io/nowebfilternovember/Among_Us.png" },
-  { "title": "Angry Birds Space", "url": "https://cdn.gitdelivr.in/gh/electricxmaxx/mathassignments/main/angrybirdsspace.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(11).jpg" },
-  { "title": "Awesome Tanks 2", "url": "https://cdn.gitdelivr.in/gh/electricxmaxx/mathassignments/main/awesometanks2.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(12).jpg" },
-  { "title": "Backrooms", "url": "https://cdn.gitdelivr.in/gh/electricxmaxx/mathassignments/main/Backrooms.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(13).jpg" },
-  { "title": "Baseball Bros", "url": "Baseball Bros.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(14).jpg" },
-  { "title": "Basketball Bros", "url": "https://cdn.gitdelivr.in/gh/electricxmaxx/mathassignments/main/Baseball Bros.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(15).jpg" },
-  { "title": "Basketball Stars", "url": "Basketball Stars.html", "image": "https://ik.imagekit.io/nowebfilternovember/basketball-stars1-m240x240.jpg" },
-  { "title": "Bit Planes", "url": "bitplanes.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(16).jpg" },
-  { "title": "Blocky Snakes", "url": "Blocky Snakes.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(17).jpg" },
-  { "title": "Brotato", "url": "brotato.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(18).jpg" },
-  { "title": "Candy Crush", "url": "candycrush.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(19).jpg" },
-  { "title": "Chess", "url": "https://cdn.gitdelivr.in/gh/electricxmaxx/mathassignments/main/Chess.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(20).jpg" },
-  { "title": "Cluster Rush", "url": "clusterrush.html", "image": "https://ik.imagekit.io/nowebfilternovember/login-logo.webp" },
-  { "title": "Cookie Clicker", "url": "cookieclicker.htm", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(21).jpg" },
-  { "title": "Crazy Motorcycle", "url": "crazymotorcycle.html", "image": "https://ik.imagekit.io/nowebfilternovember/crazy-motorcycle_1x1-cover.png" },
-  { "title": "Crossy Road", "url": "crossyroad.htm", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(22).jpg" },
-  { "title": "Dread Head Parkour", "url": "dreadheadparkour.htm", "image": "https://ik.imagekit.io/nowebfilternovember/unnamed.png" },
-  { "title": "Drive Mad", "url": "drivemad.htm", "image": "https://ik.imagekit.io/nowebfilternovember/drive-mad-logo.png" },
-  { "title": "Drift Boss", "url": "Drift Boss.htm", "image": "https://ik.imagekit.io/nowebfilternovember/drift-boss-logo.png" },
-  { "title": "Duck Life 3", "url": "ducklife3.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20s(23).jpg" },
-  { "title": "Duck Life 4", "url": "Duck Life 4.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(23).jpg" },
-  { "title": "Duck Life 5", "url": "ducklife5.html", "image": "https://ik.imagekit.io/nowebfilternovember/unnamed%20(1).png" },
-  { "title": "Eagle Ride", "url": "Eagle Ride.html", "image": "https://ik.imagekit.io/nowebfilternovember/unnamed%20(2).png" },
-  { "title": "Earn to Die", "url": "earntodie.html", "image": "https://ik.imagekit.io/nowebfilternovember/earn-to-die-2.png" },
-  { "title": "Eggy Car", "url": "eggycar.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(24).jpg" },
-  { "title": "Elastic Face", "url": "elasticface.htm", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(25).jpg" },
-  { "title": "Escaping the Prison", "url": "escapingtheprison.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(26).jpg" },
-  { "title": "FNAF", "url": "FNAF.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(27).jpg" },
-  { "title": "FNAF 4", "url": "https://cdn.gitdelivr.in/gh/electricxmaxx/mathassignments/main/fnaf4.html", "image": "https://ik.imagekit.io/nowebfilternovember/Fnaf_4_desktop_icon.webp" },
-  { "title": "Flood Runner 3", "url": "floodrunner3.html", "image": "https://ik.imagekit.io/nowebfilternovember/flood-runner-3.jpg" },
-  { "title": "Flood Runner 4", "url": "https://cdn.gitdelivr.in/gh/electricxmaxx/mathassignments/main/Flood Runner 4.html", "image": "https://ik.imagekit.io/nowebfilternovember/dora_floodrunner4_title.jpg" },
-  { "title": "Funny Battle", "url": "funnybattle.html", "image": "https://ik.imagekit.io/nowebfilternovember/241006_7_sq.webp" },
-  { "title": "Funny Battle 2", "url": "funnybattle2.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(28).jpg" },
-  { "title": "Geometry Dash Scratch", "url": "https://cdn.gitdelivr.in/gh/electricxmaxx/mathassignments/main/geodashscratch.html", "image": "https://ik.imagekit.io/nowebfilternovember/Screenshot%202026-11-03%20183239.png" },
-  { "title": "Getaway Shootout", "url": "https://cdn.gitdelivr.in/gh/electricxmaxx/mathassignments/main/Getaway Shootout.htm", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(29).jpg" },
-  { "title": "Google Dino", "url": "googledino.html", "image": "https://ik.imagekit.io/nowebfilternovember/unnamed%20(3).png" },
-  { "title": "Granny", "url": "granny.html", "image": "https://ik.imagekit.io/nowebfilternovember/unnamed%20(4).png" },
-  { "title": "Guess Their Answer", "url": "Guess Their Answer.html", "image": "https://ik.imagekit.io/nowebfilternovember/71tgb7NDY6L.png" },
-  { "title": "Happy Wheels", "url": "Happy Wheels.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(30).jpg" },
-  { "title": "Karate Bros", "url": "Karate Bros.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(31).jpg" },
-  { "title": "Melon Playground", "url": "https://cdn.gitdelivr.in/gh/electricxmaxx/mathassignments/main/melonplayground.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(32).jpg" },
-  { "title": "Minecraft 1.9.4", "url": "Minecraft 1.9.4.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(33).jpg" },
-  { "title": "Minecraft 1.12.2", "url": "Minecraft 1.12.2.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(33).jpg" },
-  { "title": "Minecraft Alpha 1.2.6", "url": "Minecraft Alpha 1.2.6.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(33).jpg" },
-  { "title": "Minecraft Beta 1.3", "url": "Minecraft Beta 1.3.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(33).jpg" },
-  { "title": "Minecraft Beta 1.7.3", "url": "Minecraft Beta 1.7.3.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(33).jpg" },
-  { "title": "Minecraft Indev", "url": "Minecraft Indev.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(33).jpg" },
-  { "title": "Monkey Mart", "url": "monkeymart.htm", "image": "https://ik.imagekit.io/nowebfilternovember/unnamed%20(5).png" },
-  { "title": "Moto X3M", "url": "motox3m.htm", "image": "https://ik.imagekit.io/nowebfilternovember/moto-x3m-logo.jpg" },
-  { "title": "Moto X3M 3", "url": "motox3m3.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(34).jpg" },
-  { "title": "Moto X3M Spooky", "url": "motox3mspooky", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(34).jpg" },
-  { "title": "Mountain Bike Racer", "url": "mountainbikeracer.html", "image": "https://ik.imagekit.io/nowebfilternovember/images.png" },
-  { "title": "Opposite Day", "url": "oppositeday.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(1).png" },
-  { "title": "Paper.io 2", "url": "paperio2.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(36).jpg" },
-  { "title": "Papa's Burgeria", "url": "papasburgeria.html", "image": "https://ik.imagekit.io/nowebfilternovember/papas-burgeria-logo.jfif" },
-  { "title": "Papa's Cheeseria", "url": "papascheeseria.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(37).jpg" },
-  { "title": "Papa's Cupcakeria", "url": "papascupcakeria.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(38).jpg" },
-  { "title": "Papa's Donuteria", "url": "papasdonuteria.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(38).jpg" },
-  { "title": "Papa's Freezeria", "url": "papasfreezeria.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(40).jpg" },
-  { "title": "Papa's Hot Doggeria", "url": "papashotdoggeria.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(41).jpg" },
-  { "title": "Papa's Pancakeria", "url": "papaspancakeria.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(45).jpg" },
-  { "title": "Papa's Pastaria", "url": "papaspastaria.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(42).jpg" },
-  { "title": "Papa's Pizzeria", "url": "papaspizzeria.html", "image": "https://ik.imagekit.io/nowebfilternovember/papas-pizzeria-logo.jfif" },
-  { "title": "Papa's Tacomia", "url": "papastacomia.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(43).jpg" },
-  { "title": "Papa's Wingeria", "url": "papaswingeria.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(44).jpg" },
-  { "title": "Silk", "url": "silk.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(46).jpg" },
-  { "title": "Slope 2 Player", "url": "slope2player.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(47).jpg" },
-  { "title": "Slow Roads", "url": "slowroads.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(49).jpg" },
-  { "title": "Snow Rider", "url": "snowrider.htm", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(50).jpg" },
-  { "title": "Soccer Bros", "url": "soccerbros.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(51).jpg" },
-  { "title": "Stack", "url": "stack.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(52).jpg" },
-  { "title": "Steal Brainrot", "url": "stealbrainrot.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(53).jpg" },
-  { "title": "Super Chibi Knight", "url": "superchibiknight.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(54).jpg" },
-  { "title": "Territorial.io", "url": "territorialio.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(55).jpg" },
-  { "title": "Tiny Fishing", "url": "tinyfishing.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(2).png" },
-  { "title": "Wave Dash", "url": "wavedash.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(3).png" },
-  { "title": "100-in-1 NES", "url": "100in1nes.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(4).png" },
-  { "title": "10 Bullets", "url": "https://cdn.gitdelivr.in/gh/electricxmaxx/mathassignments/main/10bullets.html", "image": "https://ik.imagekit.io/nowebfilternovember/images%20(56).jpg" },
-  { "title": "Snow Road", "url": "snowroad.html", "image": "https://ik.imagekit.io/doyourwork/images%20(59).jpg" },
-  { "title": "Skibidi Toilet IO", "url": "skibiditoiletio.html", "image": "https://ik.imagekit.io/doyourwork/images%20(60).jpg" },
-  { "title": "Sandtris", "url": "sandtris.html", "image": "https://ik.imagekit.io/doyourwork/images%20(61).jpg" },
-  { "title": "Noob Miner", "url": "noobminer.html", "image": "https://ik.imagekit.io/doyourwork/images%20(62).jpg" },
-  { "title": "Just Fall LOL", "url": "justfallLOL.html", "image": "https://ik.imagekit.io/doyourwork/images%20(63).jpg" },
-  { "title": "Slope", "url": "slope.html", "image": "https://ik.imagekit.io/doyourwork/images%20(64).jpg" },
-  { "title": "Grow a Garden", "url": "growagarden.html", "image": "https://ik.imagekit.io/doyourwork/images%20(65).jpg" },
-  { "title": "Angry Birds Slingshot Frenzy", "url": "angrybirdsslingshotfrenzy.html", "image": "https://ik.imagekit.io/doyourwork/images%20(66).jpg" },
-  { "title": "Apple Worm", "url": "appleworm.html", "image": "https://ik.imagekit.io/doyourwork/images%20(67).jpg" },
-  { "title": "Bad Time Sim", "url": "badtimessim.html", "image": "https://ik.imagekit.io/doyourwork/images%20(68).jpg" },
-  { "title": "Block Blast", "url": "blockblast.html", "image": "https://ik.imagekit.io/doyourwork/images%20(69).jpg" },
-  { "title": "Bloxorz", "url": "bloxorz.html", "image": "https://ik.imagekit.io/doyourwork/images%20(70).jpg" },
-  { "title": "Bob the Robber", "url": "bobtherobber.html", "image": "https://ik.imagekit.io/doyourwork/images%20(6).png" },
-  { "title": "Brawl Stars", "url": "brawlstars.html", "image": "https://ik.imagekit.io/doyourwork/images%20(71).jpg" },
-  { "title": "Car Drawing", "url": "cardrawing.html", "image": "https://ik.imagekit.io/doyourwork/images%20(72).jpg" },
-  { "title": "Dogecoin Miner", "url": "dogecoinminer.html", "image": "https://ik.imagekit.io/doyourwork/images%20(73).jpg" },
-  { "title": "Good Boy Galaxy", "url": "goodboygalaxy.html", "image": "https://ik.imagekit.io/doyourwork/images%20(74).jpg" },
-  { "title": "Donkey Kong", "url": "donkeykong.html", "image": "https://ik.imagekit.io/doyourwork/images%20(75).jpg" },
-  { "title": "Castlevania", "url": "castlevania.html", "image": "https://ik.imagekit.io/doyourwork/images%20(76).jpg" },
-  { "title": "Hollow Knight", "url": "hollowknight.html", "image": "https://ik.imagekit.io/doyourwork/images%20(77).jpg" },
-  { "title": "Plants vs Zombies", "url": "plantsvszombies.html", "image": "https://ik.imagekit.io/doyourwork/images%20(78).jpg" },
-  { "title": "Riddle School", "url": "riddleschool.html", "image": "https://ik.imagekit.io/doyourwork/images%20(7).png" },
-  { "title": "Riddle School 2", "url": "riddleschool2.html", "image": "https://ik.imagekit.io/doyourwork/images%20(81).jpg" },
-  { "title": "Riddle School 3", "url": "riddleschool3.html", "image": "https://ik.imagekit.io/doyourwork/images%20(80).jpg" },
-  { "title": "Run 3", "url": "run3.html", "image": "https://ik.imagekit.io/doyourwork/images%20(82).jpg" },
-  { "title": "Spacebar Clicker", "url": "spacebarclicker.html", "image": "https://ik.imagekit.io/doyourwork/images%20(83).jpg" },
-  { "title": "Wheely 2", "url": "wheely2.html", "image": "https://ik.imagekit.io/doyourwork/images%20(85).jpg" },
-  { "title": "Wheely 3", "url": "wheely3.html", "image": "https://ik.imagekit.io/doyourwork/images%20(86).jpg" },
-  { "title": "Wheely 4", "url": "wheely4.html", "image": "https://ik.imagekit.io/doyourwork/images%20(87).jpg" },
-  { "title": "Wheely 5", "url": "wheely5.html", "image": "https://ik.imagekit.io/doyourwork/images%20(88).jpg" },
-  { "title": "Wheely 6", "url": "wheely6.html", "image": "https://ik.imagekit.io/doyourwork/images%20(89).jpg" },
-  { "title": "Wheely 7", "url": "wheely7.html", "image": "https://ik.imagekit.io/doyourwork/images%20(90).jpg" },
-  { "title": "Wheely", "url": "wheely.html", "image": "https://ik.imagekit.io/doyourwork/images%20(84).jpg" },
-  { "title": "FNF vs Imposter", "url": "fnfvimpos.html", "image": "https://ik.imagekit.io/doyourwork/artworks-R7AHQWe4FJ7ny1yn-iVnz2Q-t1080x1080.jpg" },
-  { "title": "FNF Twiddlefinger", "url": "fnftwiddlefinger.html", "image": "https://ik.imagekit.io/doyourwork/images%20(92).jpg" },
-  { "title": "FNF Animation", "url": "fnfanimation.html", "image": "https://ik.imagekit.io/doyourwork/images%20(93).jpg" },
-  { "title": "Retro Bowl", "url": "Retro Bowl.html", "image": "https://ik.imagekit.io/doyourwork/download%20(4).png" },
-  { "title": "Retro Bowl College", "url": "Retrobowlcollege.html", "image": "https://ik.imagekit.io/doyourwork/images%20(8).png" },
-  { "title": "Supreme Duelist", "url": "supremeduelist.html", "image": "https://ik.imagekit.io/doyourwork/images%20(94).jpg" },
-  { "title": "4th And Goal", "url": "4thandgoal.html", "image": "https://ik.imagekit.io/doyourwork/images%20(95).jpg" },
-  { "title": "Football Bros", "url": "https://cdn.gitdelivr.in/gh/electricxmaxx/mathassignments/main/footballbros.html", "image": "https://ik.imagekit.io/doyourwork/download%20(13).jpg" },
-  { "title": "Minecraft 26.2 (DYLAN CLIENT)", "url": "dylanclient-26.3-r2-music-jsdelivr.html", "image": "https://ik.imagekit.io/doyourwork/og.jpg" },
-  { "title": "Wheely 8", "url": "wheely8.html", "image": "https://ik.imagekit.io/doyourwork/images%20(91).jpg" },
-  { "title": "Dino Run", "url": "Dinorun.html", "image": "https://ik.imagekit.io/doyourwork/images%20(96).jpg" },
-  { "title": "Duck Life 2", "url": "Ducklife 2.html", "image": "https://ik.imagekit.io/doyourwork/images%20(97).jpg" },
-  { "title": "Duck Life", "url": "Ducklife.html", "image": "https://ik.imagekit.io/doyourwork/images%20(98).jpg" },
-  { "title": "Electric Man 2", "url": "Electricman 2.html", "image": "https://ik.imagekit.io/doyourwork/images%20(99).jpg" },
-  { "title": "Get on Top", "url": "Getontop.html", "image": "https://ik.imagekit.io/doyourwork/images%20(100).jpg" },
-  { "title": "Hextris", "url": "Hextris.html", "image": "https://ik.imagekit.io/doyourwork/images%20(9).png" },
-  { "title": "Ice Climber", "url": "Iceclimber.html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T180130.202.jpg" },
-  { "title": "Idle Dice", "url": "Idledice.html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T180140.129.jpg" },
-  { "title": "Hobo 3", "url": "Hobo 3 (1).html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T180236.196.jpg" },
-  { "title": "Hobo 4", "url": "Hobo 4 (1).html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T180242.320.jpg" },
-  { "title": "Hobo 5", "url": "Hobo 5 (1).html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T180249.884.jpg" },
-  { "title": "Hobo 6", "url": "Hobo 6 (1).html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T180307.901.jpg" },
-  { "title": "Hobo 7", "url": "Hobo 7 (1).html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T180320.322.jpg" },
-  { "title": "High Speed", "url": "High Speed.html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T180418.085.jpg" },
-  { "title": "Idle Breakout", "url": "Idlebreakout.html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T180433.057.jpg" },
-  { "title": "Kirby's Dream Land", "url": "Kirbysdreamland.html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T180450.911.jpg" },
-  { "title": "Johnny Trigger", "url": "Johnnytrigger.html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T180525.696.jpg" },
-  { "title": "Infinite Craft", "url": "Infinitecraft.html", "image": "https://ik.imagekit.io/doyourwork/images%20(10).png" },
-  { "title": "Huggy Wuggy Pixel", "url": "Huggywuggypixel.html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T180650.715.jpg" },
-  { "title": "Grand Theft Auto Advance", "url": "Grandtheftautoadvance.html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T180919.877.jpg" },
-  { "title": "Line Rider", "url": "Linerider.html", "image": "https://ik.imagekit.io/doyourwork/images%20(11).png" },
-  { "title": "Bloons TD 2", "url": "Bloons TD 2.html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T180817.112.jpg" },
-  { "title": "Bloons TD 4", "url": "Bloons TD 4.html", "image": "https://ik.imagekit.io/doyourwork/images%20(11).png" },
-  { "title": "Temple Run 2", "url": "Temple Run 2.html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T180937.341.jpg" },
-  { "title": "Snow Bros", "url": "Snowbros.html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T180947.824.jpg" },
-  { "title": "Paper Mario Practice Hack", "url": "Paper Mario Practice Hack.html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181023.105.jpg" },
-  { "title": "Kirby 64", "url": "Kirby 64.html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181044.718.jpg" },
-  { "title": "Dune Buggy", "url": "Dunebuggy.html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181128.881.jpg" },
-  { "title": "Super Mario Kart", "url": "Supermariokart.html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181200.899.jpg" },
-  { "title": "Quantum Clicker", "url": "Quantum Clicker.html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181229.626.jpg" },
-  { "title": "Snowball.io", "url": "Snowballio.html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181245.974.jpg" },
-  { "title": "Troll Face Quest 1", "url": "Troll Face Quest 1.html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181358.318.jpg" },
-  { "title": "Troll Face Quest 2", "url": "Troll Face Quest 2.html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181358.318.jpg" },
-  { "title": "Troll Face Quest 3", "url": "Troll Face Quest 3.html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181422.249.jpg" },
-  { "title": "Troll Face Quest 4", "url": "Troll Face Quest 4.html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181358.318.jpg" },
-  { "title": "Troll Face Quest 5", "url": "Troll Face Quest 5.html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181438.655.jpg" },
-  { "title": "Troll Face Quest 6", "url": "Troll Face Quest 6.html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181520.604.jpg" },
-  { "title": "Troll Face Quest 7", "url": "Troll Face Quest 7.html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181520.604.jpg" },
-  { "title": "Troll Face Quest 8", "url": "Troll Face Quest 8.html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181358.318.jpg" },
-  { "title": "Troll Face Quest 9", "url": "Troll Face Quest 9.html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181358.318.jpg" },
-  { "title": "Troll Face Quest 10", "url": "Troll Face Quest 10.html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181358.318.jpg" },
-  { "title": "Troll Face Quest 11", "url": "Troll Face Quest 11.html", "image": "https://ik.imagekit.io/doyourwork/troll-face-quest-11.jpg" },
-  { "title": "Troll Face Quest 12", "url": "Troll Face Quest 12.html", "image": "https://ik.imagekit.io/doyourwork/troll-face-quest-12.jpg" },
-  { "title": "Troll Face Quest 13", "url": "Troll Face Quest 13.html", "image": "https://ik.imagekit.io/doyourwork/trollface-quest-13.jpg" },
-  { "title": "Climb for Brainrots", "url": "Climbforbrainrots.html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181813.150.jpg" },
-  { "title": "Mom I'm Sleeping", "url": "Momimsleeping.html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181822.962.jpg" },
-  { "title": "Tung Tung Tung Sahur obby", "url": "Tungtungtungsahurobby.html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181854.428.jpg" },
-  { "title": "ULTRAKILL", "url": "ULTRAKILL.html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181912.878.jpg" },
-  { "title": "Minecraft Pocket Edition", "url": "minecraftpe.html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T194627.919.jpg" },
-  { "title": "Undertale Icebound", "url": "undertaleicebound.html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T201433.638.jpg" },
-  { "title": "Flappy Bird", "url": "Flappy Bird.html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T201927.777.jpg" },
-  { "title": "Five Nights at Jeffs", "url": "Five Nights at Epstein's.html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T201916.970.jpg" },
-  { "title": "Death Run 3D", "url": "Death Run 3D.html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T201936.712.jpg" },
-  { "title": "Blade Ball", "url": "Blade Ball.html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T202037.835.jpg" },
-  { "title": "Traffic Racer", "url": "Traffic Racer.html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T201946.358.jpg" },
-  { "title": "Scratch 3.0 Editor", "url": "scratchsinglefile.html", "image": "https://ik.imagekit.io/doyourwork/images%20(12).png" },
-  { "title": "Sonic 3", "url": "sonic3.html", "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181935.880.jpg" }
+  {
+    "title": "2048",
+    "url": "2048.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images2048.png"
+  },
+  {
+    "title": "Age of War",
+    "url": "ageofwar.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/imagesageofwar.png"
+  },
+  {
+    "title": "3D Geometry Dash",
+    "url": "3dgeodash.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(58).jpg"
+  },
+  {
+    "title": "Jelly Mario",
+    "url": "jellymariofixed.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(5).png"
+  },
+  {
+    "title": "Age of War 2",
+    "url": "https://cdn.gitdelivr.in/gh/electricxmaxx/mathassignments/main/Age of War 2.htmll",
+    "image": "https://ik.imagekit.io/nowebfilternovember/dora_ageofwar2_title.jpg"
+  },
+  {
+    "title": "Agario Lite",
+    "url": "agariolite.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/Agar.io_Logo.png"
+  },
+  {
+    "title": "Among Us",
+    "url": "amongus.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/Among_Us.png"
+  },
+  {
+    "title": "Angry Birds Space",
+    "url": "https://cdn.gitdelivr.in/gh/electricxmaxx/mathassignments/main/angrybirdsspace.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(11).jpg"
+  },
+  {
+    "title": "Awesome Tanks 2",
+    "url": "https://cdn.gitdelivr.in/gh/electricxmaxx/mathassignments/main/awesometanks2.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(12).jpg"
+  },
+  {
+    "title": "Backrooms",
+    "url": "https://cdn.gitdelivr.in/gh/electricxmaxx/mathassignments/main/Backrooms.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(13).jpg"
+  },
+  {
+    "title": "Baseball Bros",
+    "url": "Baseball Bros.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(14).jpg"
+  },
+  {
+    "title": "Basketball Bros",
+    "url": "https://cdn.gitdelivr.in/gh/electricxmaxx/mathassignments/main/Baseball Bros.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(15).jpg"
+  },
+  {
+    "title": "Basketball Stars",
+    "url": "Basketball Stars.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/basketball-stars1-m240x240.jpg"
+  },
+  {
+    "title": "Bit Planes",
+    "url": "bitplanes.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(16).jpg"
+  },
+  {
+    "title": "Blocky Snakes",
+    "url": "Blocky Snakes.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(17).jpg"
+  },
+  {
+    "title": "Brotato",
+    "url": "brotato.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(18).jpg"
+  },
+  {
+    "title": "Candy Crush",
+    "url": "candycrush.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(19).jpg"
+  },
+  {
+    "title": "Chess",
+    "url": "https://cdn.gitdelivr.in/gh/electricxmaxx/mathassignments/main/Chess.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(20).jpg"
+  },
+  {
+    "title": "Cluster Rush",
+    "url": "clusterrush.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/login-logo.webp"
+  },
+  {
+    "title": "Cookie Clicker",
+    "url": "cookieclicker.htm",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(21).jpg"
+  },
+  {
+    "title": "Crazy Motorcycle",
+    "url": "crazymotorcycle.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/crazy-motorcycle_1x1-cover.png"
+  },
+  {
+    "title": "Crossy Road",
+    "url": "crossyroad.htm",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(22).jpg"
+  },
+  {
+    "title": "Dread Head Parkour",
+    "url": "dreadheadparkour.htm",
+    "image": "https://ik.imagekit.io/nowebfilternovember/unnamed.png"
+  },
+  {
+    "title": "Drive Mad",
+    "url": "drivemad.htm",
+    "image": "https://ik.imagekit.io/nowebfilternovember/drive-mad-logo.png"
+  },
+  {
+    "title": "Drift Boss",
+    "url": "Drift Boss.htm",
+    "image": "https://ik.imagekit.io/nowebfilternovember/drift-boss-logo.png"
+  },
+  {
+    "title": "Duck Life 3",
+    "url": "ducklife3.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20s(23).jpg"
+  },
+  {
+    "title": "Duck Life 4",
+    "url": "Duck Life 4.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(23).jpg"
+  },
+  {
+    "title": "Duck Life 5",
+    "url": "ducklife5.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/unnamed%20(1).png"
+  },
+  {
+    "title": "Eagle Ride",
+    "url": "Eagle Ride.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/unnamed%20(2).png"
+  },
+  {
+    "title": "Earn to Die",
+    "url": "earntodie.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/earn-to-die-2.png"
+  },
+  {
+    "title": "Eggy Car",
+    "url": "eggycar.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(24).jpg"
+  },
+  {
+    "title": "Elastic Face",
+    "url": "elasticface.htm",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(25).jpg"
+  },
+  {
+    "title": "Escaping the Prison",
+    "url": "escapingtheprison.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(26).jpg"
+  },
+  {
+    "title": "FNAF",
+    "url": "FNAF.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(27).jpg"
+  },
+  {
+    "title": "FNAF 4",
+    "url": "https://cdn.gitdelivr.in/gh/electricxmaxx/mathassignments/main/fnaf4.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/Fnaf_4_desktop_icon.webp"
+  },
+  {
+    "title": "Flood Runner 3",
+    "url": "floodrunner3.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/flood-runner-3.jpg"
+  },
+  {
+    "title": "Flood Runner 4",
+    "url": "https://cdn.gitdelivr.in/gh/electricxmaxx/mathassignments/main/Flood Runner 4.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/dora_floodrunner4_title.jpg"
+  },
+  {
+    "title": "Funny Battle",
+    "url": "funnybattle.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/241006_7_sq.webp"
+  },
+  {
+    "title": "Funny Battle 2",
+    "url": "funnybattle2.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(28).jpg"
+  },
+  {
+    "title": "Geometry Dash Scratch",
+    "url": "https://cdn.gitdelivr.in/gh/electricxmaxx/mathassignments/main/geodashscratch.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/Screenshot%202026-11-03%20183239.png"
+  },
+  {
+    "title": "Getaway Shootout",
+    "url": "https://cdn.gitdelivr.in/gh/electricxmaxx/mathassignments/main/Getaway Shootout.htm",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(29).jpg"
+  },
+  {
+    "title": "Google Dino",
+    "url": "googledino.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/unnamed%20(3).png"
+  },
+  {
+    "title": "Granny",
+    "url": "granny.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/unnamed%20(4).png"
+  },
+  {
+    "title": "Guess Their Answer",
+    "url": "Guess Their Answer.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/71tgb7NDY6L.png"
+  },
+  {
+    "title": "Happy Wheels",
+    "url": "Happy Wheels.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(30).jpg"
+  },
+  {
+    "title": "Karate Bros",
+    "url": "Karate Bros.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(31).jpg"
+  },
+  {
+    "title": "Melon Playground",
+    "url": "https://cdn.gitdelivr.in/gh/electricxmaxx/mathassignments/main/melonplayground.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(32).jpg"
+  },
+  {
+    "title": "Minecraft 1.9.4",
+    "url": "Minecraft 1.9.4.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(33).jpg"
+  },
+  {
+    "title": "Minecraft 1.12.2",
+    "url": "Minecraft 1.12.2.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(33).jpg"
+  },
+  {
+    "title": "Minecraft Alpha 1.2.6",
+    "url": "Minecraft Alpha 1.2.6.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(33).jpg"
+  },
+  {
+    "title": "Minecraft Beta 1.3",
+    "url": "Minecraft Beta 1.3.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(33).jpg"
+  },
+  {
+    "title": "Minecraft Beta 1.7.3",
+    "url": "Minecraft Beta 1.7.3.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(33).jpg"
+  },
+  {
+    "title": "Minecraft Indev",
+    "url": "Minecraft Indev.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(33).jpg"
+  },
+  {
+    "title": "Monkey Mart",
+    "url": "monkeymart.htm",
+    "image": "https://ik.imagekit.io/nowebfilternovember/unnamed%20(5).png"
+  },
+  {
+    "title": "Moto X3M",
+    "url": "motox3m.htm",
+    "image": "https://ik.imagekit.io/nowebfilternovember/moto-x3m-logo.jpg"
+  },
+  {
+    "title": "Moto X3M 3",
+    "url": "motox3m3.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(34).jpg"
+  },
+  {
+    "title": "Moto X3M Spooky",
+    "url": "motox3mspooky",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(34).jpg"
+  },
+  {
+    "title": "Mountain Bike Racer",
+    "url": "mountainbikeracer.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images.png"
+  },
+  {
+    "title": "Opposite Day",
+    "url": "oppositeday.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(1).png"
+  },
+  {
+    "title": "Paper.io 2",
+    "url": "paperio2.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(36).jpg"
+  },
+  {
+    "title": "Papa's Burgeria",
+    "url": "papasburgeria.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/papas-burgeria-logo.jfif"
+  },
+  {
+    "title": "Papa's Cheeseria",
+    "url": "papascheeseria.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(37).jpg"
+  },
+  {
+    "title": "Papa's Cupcakeria",
+    "url": "papascupcakeria.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(38).jpg"
+  },
+  {
+    "title": "Papa's Donuteria",
+    "url": "papasdonuteria.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(38).jpg"
+  },
+  {
+    "title": "Papa's Freezeria",
+    "url": "papasfreezeria.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(40).jpg"
+  },
+  {
+    "title": "Papa's Hot Doggeria",
+    "url": "papashotdoggeria.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(41).jpg"
+  },
+  {
+    "title": "Papa's Pancakeria",
+    "url": "papaspancakeria.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(45).jpg"
+  },
+  {
+    "title": "Papa's Pastaria",
+    "url": "papaspastaria.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(42).jpg"
+  },
+  {
+    "title": "Papa's Pizzeria",
+    "url": "papaspizzeria.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/papas-pizzeria-logo.jfif"
+  },
+  {
+    "title": "Papa's Tacomia",
+    "url": "papastacomia.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(43).jpg"
+  },
+  {
+    "title": "Papa's Wingeria",
+    "url": "papaswingeria.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(44).jpg"
+  },
+  {
+    "title": "Silk",
+    "url": "silk.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(46).jpg"
+  },
+  {
+    "title": "Slope 2 Player",
+    "url": "slope2player.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(47).jpg"
+  },
+  {
+    "title": "Slow Roads",
+    "url": "slowroads.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(49).jpg"
+  },
+  {
+    "title": "Snow Rider",
+    "url": "snowrider.htm",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(50).jpg"
+  },
+  {
+    "title": "Soccer Bros",
+    "url": "soccerbros.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(51).jpg"
+  },
+  {
+    "title": "Stack",
+    "url": "stack.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(52).jpg"
+  },
+  {
+    "title": "Steal Brainrot",
+    "url": "stealbrainrot.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(53).jpg"
+  },
+  {
+    "title": "Super Chibi Knight",
+    "url": "superchibiknight.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(54).jpg"
+  },
+  {
+    "title": "Territorial.io",
+    "url": "territorialio.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(55).jpg"
+  },
+  {
+    "title": "Tiny Fishing",
+    "url": "tinyfishing.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(2).png"
+  },
+  {
+    "title": "Wave Dash",
+    "url": "wavedash.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(3).png"
+  },
+  {
+    "title": "100-in-1 NES",
+    "url": "100in1nes.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(4).png"
+  },
+  {
+    "title": "10 Bullets",
+    "url": "https://cdn.gitdelivr.in/gh/electricxmaxx/mathassignments/main/10bullets.html",
+    "image": "https://ik.imagekit.io/nowebfilternovember/images%20(56).jpg"
+  },
+  {
+    "title": "Snow Road",
+    "url": "snowroad.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(59).jpg"
+  },
+  {
+    "title": "Skibidi Toilet IO",
+    "url": "skibiditoiletio.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(60).jpg"
+  },
+  {
+    "title": "Sandtris",
+    "url": "sandtris.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(61).jpg"
+  },
+  {
+    "title": "Noob Miner",
+    "url": "noobminer.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(62).jpg"
+  },
+  {
+    "title": "Just Fall LOL",
+    "url": "justfallLOL.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(63).jpg"
+  },
+  {
+    "title": "Slope",
+    "url": "slope.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(64).jpg"
+  },
+  {
+    "title": "Grow a Garden",
+    "url": "growagarden.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(65).jpg"
+  },
+  {
+    "title": "Angry Birds Slingshot Frenzy",
+    "url": "angrybirdsslingshotfrenzy.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(66).jpg"
+  },
+  {
+    "title": "Apple Worm",
+    "url": "appleworm.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(67).jpg"
+  },
+  {
+    "title": "Bad Time Sim",
+    "url": "badtimessim.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(68).jpg"
+  },
+  {
+    "title": "Block Blast",
+    "url": "blockblast.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(69).jpg"
+  },
+  {
+    "title": "Bloxorz",
+    "url": "bloxorz.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(70).jpg"
+  },
+  {
+    "title": "Bob the Robber",
+    "url": "bobtherobber.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(6).png"
+  },
+  {
+    "title": "Brawl Stars",
+    "url": "brawlstars.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(71).jpg"
+  },
+  {
+    "title": "Car Drawing",
+    "url": "cardrawing.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(72).jpg"
+  },
+  {
+    "title": "Dogecoin Miner",
+    "url": "dogecoinminer.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(73).jpg"
+  },
+  {
+    "title": "Good Boy Galaxy",
+    "url": "goodboygalaxy.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(74).jpg"
+  },
+  {
+    "title": "Donkey Kong",
+    "url": "donkeykong.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(75).jpg"
+  },
+  {
+    "title": "Castlevania",
+    "url": "castlevania.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(76).jpg"
+  },
+  {
+    "title": "Hollow Knight",
+    "url": "hollowknight.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(77).jpg"
+  },
+  {
+    "title": "Plants vs Zombies",
+    "url": "plantsvszombies.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(78).jpg"
+  },
+  {
+    "title": "Riddle School",
+    "url": "riddleschool.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(7).png"
+  },
+  {
+    "title": "Riddle School 2",
+    "url": "riddleschool2.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(81).jpg"
+  },
+  {
+    "title": "Riddle School 3",
+    "url": "riddleschool3.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(80).jpg"
+  },
+  {
+    "title": "Run 3",
+    "url": "run3.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(82).jpg"
+  },
+  {
+    "title": "Spacebar Clicker",
+    "url": "spacebarclicker.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(83).jpg"
+  },
+  {
+    "title": "Wheely 2",
+    "url": "wheely2.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(85).jpg"
+  },
+  {
+    "title": "Wheely 3",
+    "url": "wheely3.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(86).jpg"
+  },
+  {
+    "title": "Wheely 4",
+    "url": "wheely4.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(87).jpg"
+  },
+  {
+    "title": "Wheely 5",
+    "url": "wheely5.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(88).jpg"
+  },
+  {
+    "title": "Wheely 6",
+    "url": "wheely6.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(89).jpg"
+  },
+  {
+    "title": "Wheely 7",
+    "url": "wheely7.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(90).jpg"
+  },
+  {
+    "title": "Wheely",
+    "url": "wheely.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(84).jpg"
+  },
+  {
+    "title": "FNF vs Imposter",
+    "url": "fnfvimpos.html",
+    "image": "https://ik.imagekit.io/doyourwork/artworks-R7AHQWe4FJ7ny1yn-iVnz2Q-t1080x1080.jpg"
+  },
+  {
+    "title": "FNF Twiddlefinger",
+    "url": "fnftwiddlefinger.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(92).jpg"
+  },
+  {
+    "title": "FNF Animation",
+    "url": "fnfanimation.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(93).jpg"
+  },
+  {
+    "title": "Retro Bowl",
+    "url": "Retro Bowl.html",
+    "image": "https://ik.imagekit.io/doyourwork/download%20(4).png"
+  },
+  {
+    "title": "Retro Bowl College",
+    "url": "Retrobowlcollege.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(8).png"
+  },
+  {
+    "title": "Supreme Duelist",
+    "url": "supremeduelist.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(94).jpg"
+  },
+  {
+    "title": "4th And Goal",
+    "url": "4thandgoal.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(95).jpg"
+  },
+  {
+    "title": "Football Bros",
+    "url": "https://cdn.gitdelivr.in/gh/electricxmaxx/mathassignments/main/footballbros.html",
+    "image": "https://ik.imagekit.io/doyourwork/download%20(13).jpg"
+  },
+  {
+    "title": "Minecraft 26.2 (DYLAN CLIENT)",
+    "url": "dylanclient-26.3-r2-music-jsdelivr.html",
+    "image": "https://ik.imagekit.io/doyourwork/og.jpg"
+  },
+  {
+    "title": "Wheely 8",
+    "url": "wheely8.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(91).jpg"
+  },
+  {
+    "title": "Dino Run",
+    "url": "Dinorun.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(96).jpg"
+  },
+  {
+    "title": "Duck Life 2",
+    "url": "Ducklife 2.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(97).jpg"
+  },
+  {
+    "title": "Duck Life",
+    "url": "Ducklife.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(98).jpg"
+  },
+  {
+    "title": "Electric Man 2",
+    "url": "Electricman 2.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(99).jpg"
+  },
+  {
+    "title": "Get on Top",
+    "url": "Getontop.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(100).jpg"
+  },
+  {
+    "title": "Hextris",
+    "url": "Hextris.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(9).png"
+  },
+  {
+    "title": "Ice Climber",
+    "url": "Iceclimber.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T180130.202.jpg"
+  },
+  {
+    "title": "Idle Dice",
+    "url": "Idledice.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T180140.129.jpg"
+  },
+  {
+    "title": "Hobo 3",
+    "url": "Hobo 3 (1).html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T180236.196.jpg"
+  },
+  {
+    "title": "Hobo 4",
+    "url": "Hobo 4 (1).html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T180242.320.jpg"
+  },
+  {
+    "title": "Hobo 5",
+    "url": "Hobo 5 (1).html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T180249.884.jpg"
+  },
+  {
+    "title": "Hobo 6",
+    "url": "Hobo 6 (1).html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T180307.901.jpg"
+  },
+  {
+    "title": "Hobo 7",
+    "url": "Hobo 7 (1).html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T180320.322.jpg"
+  },
+  {
+    "title": "High Speed",
+    "url": "High Speed.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T180418.085.jpg"
+  },
+  {
+    "title": "Idle Breakout",
+    "url": "Idlebreakout.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T180433.057.jpg"
+  },
+  {
+    "title": "Kirby's Dream Land",
+    "url": "Kirbysdreamland.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T180450.911.jpg"
+  },
+  {
+    "title": "Johnny Trigger",
+    "url": "Johnnytrigger.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T180525.696.jpg"
+  },
+  {
+    "title": "Infinite Craft",
+    "url": "Infinitecraft.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(10).png"
+  },
+  {
+    "title": "Huggy Wuggy Pixel",
+    "url": "Huggywuggypixel.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T180650.715.jpg"
+  },
+  {
+    "title": "Grand Theft Auto Advance",
+    "url": "Grandtheftautoadvance.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T180919.877.jpg"
+  },
+  {
+    "title": "Line Rider",
+    "url": "Linerider.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(11).png"
+  },
+  {
+    "title": "Bloons TD 2",
+    "url": "Bloons TD 2.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T180817.112.jpg"
+  },
+  {
+    "title": "Bloons TD 4",
+    "url": "Bloons TD 4.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(11).png"
+  },
+  {
+    "title": "Temple Run 2",
+    "url": "Temple Run 2.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T180937.341.jpg"
+  },
+  {
+    "title": "Snow Bros",
+    "url": "Snowbros.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T180947.824.jpg"
+  },
+  {
+    "title": "Paper Mario Practice Hack",
+    "url": "Paper Mario Practice Hack.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181023.105.jpg"
+  },
+  {
+    "title": "Kirby 64",
+    "url": "Kirby 64.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181044.718.jpg"
+  },
+  {
+    "title": "Dune Buggy",
+    "url": "Dunebuggy.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181128.881.jpg"
+  },
+  {
+    "title": "Super Mario Kart",
+    "url": "Supermariokart.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181200.899.jpg"
+  },
+  {
+    "title": "Quantum Clicker",
+    "url": "Quantum Clicker.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181229.626.jpg"
+  },
+  {
+    "title": "Snowball.io",
+    "url": "Snowballio.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181245.974.jpg"
+  },
+  {
+    "title": "Troll Face Quest 1",
+    "url": "Troll Face Quest 1.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181358.318.jpg"
+  },
+  {
+    "title": "Troll Face Quest 2",
+    "url": "Troll Face Quest 2.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181358.318.jpg"
+  },
+  {
+    "title": "Troll Face Quest 3",
+    "url": "Troll Face Quest 3.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181422.249.jpg"
+  },
+  {
+    "title": "Troll Face Quest 4",
+    "url": "Troll Face Quest 4.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181358.318.jpg"
+  },
+  {
+    "title": "Troll Face Quest 5",
+    "url": "Troll Face Quest 5.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181438.655.jpg"
+  },
+  {
+    "title": "Troll Face Quest 6",
+    "url": "Troll Face Quest 6.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181520.604.jpg"
+  },
+  {
+    "title": "Troll Face Quest 7",
+    "url": "Troll Face Quest 7.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181520.604.jpg"
+  },
+  {
+    "title": "Troll Face Quest 8",
+    "url": "Troll Face Quest 8.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181358.318.jpg"
+  },
+  {
+    "title": "Troll Face Quest 9",
+    "url": "Troll Face Quest 9.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181358.318.jpg"
+  },
+  {
+    "title": "Troll Face Quest 10",
+    "url": "Troll Face Quest 10.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181358.318.jpg"
+  },
+  {
+    "title": "Troll Face Quest 11",
+    "url": "Troll Face Quest 11.html",
+    "image": "https://ik.imagekit.io/doyourwork/troll-face-quest-11.jpg"
+  },
+  {
+    "title": "Troll Face Quest 12",
+    "url": "Troll Face Quest 12.html",
+    "image": "https://ik.imagekit.io/doyourwork/troll-face-quest-12.jpg"
+  },
+  {
+    "title": "Troll Face Quest 13",
+    "url": "Troll Face Quest 13.html",
+    "image": "https://ik.imagekit.io/doyourwork/trollface-quest-13.jpg"
+  },
+  {
+    "title": "Climb for Brainrots",
+    "url": "Climbforbrainrots.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181813.150.jpg"
+  },
+  {
+    "title": "Mom I'm Sleeping",
+    "url": "Momimsleeping.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181822.962.jpg"
+  },
+  {
+    "title": "Tung Tung Tung Sahur obby",
+    "url": "Tungtungtungsahurobby.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181854.428.jpg"
+  },
+  {
+    "title": "ULTRAKILL",
+    "url": "ULTRAKILL.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181912.878.jpg"
+  },
+  {
+    "title": "Minecraft Pocket Edition",
+    "url": "minecraftpe.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T194627.919.jpg"
+  },
+  {
+    "title": "Undertale Icebound",
+    "url": "undertaleicebound.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T201433.638.jpg"
+  },
+  {
+    "title": "Flappy Bird",
+    "url": "Flappy Bird.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T201927.777.jpg"
+  },
+  {
+    "title": "Five Nights at Jeffs",
+    "url": "Five Nights at Epstein's.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T201916.970.jpg"
+  },
+  {
+    "title": "Death Run 3D",
+    "url": "Death Run 3D.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T201936.712.jpg"
+  },
+  {
+    "title": "Blade Ball",
+    "url": "Blade Ball.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T202037.835.jpg"
+  },
+  {
+    "title": "Traffic Racer",
+    "url": "Traffic Racer.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T201946.358.jpg"
+  },
+  {
+    "title": "Scratch 3.0 Editor",
+    "url": "scratchsinglefile.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(12).png"
+  },
+  {
+    "title": "Sonic 3",
+    "url": "sonic3.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181935.880.jpg"
+  },
+  {
+    "title": "Paper Minecraft",
+    "url": "Paper Minecraft v11 (1).html",
+    "image": ""
+  },
+  {
+    "title": "Aura RNG",
+    "url": "Aura RNG.html",
+    "image": ""
+  },
+  {
+    "title": "Nightshade",
+    "url": "Nightshade.html",
+    "image": ""
+  },
+  {
+    "title": "Neon Rider",
+    "url": "Neonrider.html",
+    "image": ""
+  },
+  {
+    "title": "Neon Blaster",
+    "url": "Neonblaster.html",
+    "image": ""
+  },
+  {
+    "title": "MVP Baseball",
+    "url": "Mvpbaseball.html",
+    "image": ""
+  },
+  {
+    "title": "Mario Paint",
+    "url": "Mariopaint.html",
+    "image": ""
+  },
+  {
+    "title": "Madness Combat Defense",
+    "url": "Madnesscombatdefense.html",
+    "image": ""
+  },
+  {
+    "title": "60 Seconds Burger Run",
+    "url": "60 Seconds Burger Run.html",
+    "image": ""
+  },
+  {
+    "title": "Achievement Unlocked 2",
+    "url": "Achievmentunlocked 2.html",
+    "image": ""
+  },
+  {
+    "title": "Bloons",
+    "url": "Bloons.html",
+    "image": ""
+  },
+  {
+    "title": "Backyard Baseball",
+    "url": "Backyard Baseball.html",
+    "image": ""
+  },
+  {
+    "title": "Simpsons Arcade",
+    "url": "Simpsonsarcade.html",
+    "image": ""
+  },
+  {
+    "title": "Short Life",
+    "url": "Shortlife.html",
+    "image": ""
+  },
+  {
+    "title": "Sega Sonic the Hedgehog",
+    "url": "Sega Sonic The Hedgehog.html",
+    "image": ""
+  },
+  {
+    "title": "Ragdoll Runners",
+    "url": "Ragdollrunners.html",
+    "image": ""
+  },
+  {
+    "title": "Ragdoll Soccer",
+    "url": "Ragdollsoccer.html",
+    "image": ""
+  },
+  {
+    "title": "Ragdoll Achievement",
+    "url": "Ragdollachivement.html",
+    "image": ""
+  },
+  {
+    "title": "Raft Wars",
+    "url": "Raftwars.html",
+    "image": ""
+  },
+  {
+    "title": "CS:GO Clicker",
+    "url": "Csgoclicker.html",
+    "image": ""
+  },
+  {
+    "title": "Crazy Climber",
+    "url": "Crazyclimber.html",
+    "image": ""
+  },
+  {
+    "title": "Tunnel Rush",
+    "url": "cltunnelrushbetter.html",
+    "image": ""
+  },
+  {
+    "title": "Pokemon Emerald",
+    "url": "Pokemon Emerald.html",
+    "image": ""
+  },
+  {
+    "title": "Bubble Shooter",
+    "url": "Bubbleshooter.html",
+    "image": ""
+  },
+  {
+    "title": "Block Craft Parkour",
+    "url": "Blockcraftparkour.html",
+    "image": ""
+  },
+  {
+    "title": "Altered Beast",
+    "url": "Altered Beast.html",
+    "image": ""
+  },
+  {
+    "title": "Achievement Unlocked",
+    "url": "Achievmentunlocked.html",
+    "image": ""
+  },
+  {
+    "title": "Super Smash Bros",
+    "url": "Supersmashbros.html",
+    "image": ""
+  },
+  {
+    "title": "Territory War",
+    "url": "Territory War.html",
+    "image": ""
+  },
+  {
+    "title": "Swords and Souls",
+    "url": "Swordsandsouls.html",
+    "image": ""
+  },
+  {
+    "title": "Super Bomberman",
+    "url": "Superbomberman.html",
+    "image": ""
+  },
+  {
+    "title": "Super Car Rush",
+    "url": "Supercarrush.html",
+    "image": ""
+  },
+  {
+    "title": "Draw Climber",
+    "url": "Drawclimber.html",
+    "image": ""
+  },
+  {
+    "title": "Double Dribble",
+    "url": "Doubledribble.html",
+    "image": ""
+  },
+  {
+    "title": "Ragdoll Archers",
+    "url": "ragdollarchers.html",
+    "image": ""
+  },
+  {
+    "title": "Gladihoppers",
+    "url": "gladihoppers.html",
+    "image": ""
+  }
 ]
-
-
