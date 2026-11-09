@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GeoWander</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/mapillary-js@4.1.2/dist/mapillary.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/mapillary-js@4.1.2/dist/mapillary.css">
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+
+<style>
+  :root {
+    --bg: #0d1117;
+    --surface: #161b22;
+    --surface2: #21262d;
+    --border: #30363d;
+    --text: #e6edf3;
+    --muted: #8b949e;
+    --accent: #58a6ff;
+    --accent2: #3fb950;
+    --danger: #f85149;
+    --gold: #d29922;
+    --radius: 6px;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  *, *::before, *::after { box-sizing: inherit; margin: 0; padding: 0; }
+
+  html, body {
+    height: 100%;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Space Grotesk', sans-serif;
+    overflow: hidden;
+  }
+
+  /* ── SCREENS ── */
+  .screen { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; }
+  .screen.hidden { display: none; }
+
+  /* ── START SCREEN ── */
+  #start-screen {
+    background: var(--bg);
+    flex-direction: column;
+    gap: 0;
+  }
+  .start-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    max-width: 480px;
+    padding: 40px 24px;
+    text-align: center;
+  }
+  .logo-mark {
+    width: 64px; height: 64px;
+    border: 2px solid var(--accent);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    color: var(--accent);
+    letter-spacing: -2px;
+  }
+  .start-title {
+    font-size: 42px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    line-height: 1;
+    color: var(--text);
+  }
+  .start-title span { color: var(--accent); }
+  .start-subtitle {
+    font-size: 15px;
+    color: var(--muted);
+    line-height: 1.6;
+    max-width: 360px;
+  }
+  .token-input-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .token-input-wrap label {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    text-align: left;
+    letter-spacing: 0.05em;
+  }
+  .token-input-wrap input {
+    width: 100%;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text);
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    padding: 12px 14px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  .token-input-wrap input:focus { border-color: var(--accent); }
+  .token-hint {
+    font-size: 12px;
+    color: var(--muted);
+    text-align: left;
+    line-height: 1.5;
+  }
+  .token-hint a { color: var(--accent); text-decoration: none; }
+  .btn-primary {
+    width: 100%;
+    padding: 14px;
+    background: var(--accent);
+    color: #0d1117;
+    border: none;
+    border-radius: var(--radius);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.15s;
+  }
+  .btn-primary:hover { opacity: 0.85; }
+  .btn-primary:disabled { opacity: 0.4; cursor: not-allowed; }
+  .rounds-row {
+    display: flex; gap: 8px; width: 100%;
+  }
+  .round-btn {
+    flex: 1;
+    padding: 10px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--muted);
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .round-btn.active {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: rgba(88,166,255,0.08);
+  }
+  .rounds-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    text-align: left;
+    width: 100%;
+    letter-spacing: 0.05em;
+  }
+
+  /* ── GAME SCREEN ── */
+  #game-screen { background: #000; }
+
+  #viewer { position: absolute; inset: 0; }
+
+  /* HUD top bar */
+  .hud-top {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, rgba(13,17,23,0.85) 0%, transparent 100%);
+    pointer-events: none;
+    z-index: 10;
+  }
+  .hud-game-name {
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+  }
+  .hud-round {
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    color: var(--text);
+  }
+  .hud-score {
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    color: var(--accent2);
+  }
+
+  /* Guess map panel */
+  #map-panel {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.6);
+    z-index: 20;
+    transition: width 0.25s, height 0.25s;
+  }
+  #map-panel.expanded {
+    width: 420px;
+  }
+  .map-panel-header {
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border);
+  }
+  .map-panel-title {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+  }
+  .map-expand-btn {
+    background: none;
+    border: none;
+    color: var(--muted);
+    cursor: pointer;
+    font-size: 14px;
+    padding: 2px;
+    line-height: 1;
+  }
+  #guess-map { height: 220px; }
+  .map-footer {
+    padding: 10px 14px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  .guess-hint {
+    font-size: 12px;
+    color: var(--muted);
+    flex: 1;
+  }
+  .btn-guess {
+    padding: 8px 18px;
+    background: var(--accent2);
+    color: #0d1117;
+    border: none;
+    border-radius: var(--radius);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.15s;
+  }
+  .btn-guess:disabled { opacity: 0.35; cursor: not-allowed; }
+  .btn-guess:not(:disabled):hover { opacity: 0.85; }
+
+  /* Loading overlay */
+  #loading-overlay {
+    position: absolute; inset: 0;
+    background: var(--bg);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    gap: 20px;
+    z-index: 100;
+    transition: opacity 0.4s;
+  }
+  #loading-overlay.fade-out { opacity: 0; pointer-events: none; }
+  .spinner {
+    width: 36px; height: 36px;
+    border: 2px solid var(--border);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .loading-text {
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    color: var(--muted);
+  }
+  #skip-loading-btn {
+    display: none;
+    padding: 10px 24px;
+    background: transparent;
+    border: 1px solid var(--accent);
+    border-radius: var(--radius);
+    color: var(--accent);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+    animation: fadeInBtn 0.4s ease;
+  }
+  #skip-loading-btn:hover { background: var(--accent); color: #0d1117; }
+  @keyframes fadeInBtn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .skip-hint {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    color: var(--border);
+    display: none;
+  }
+
+  /* ── RESULT SCREEN ── */
+  #result-screen {
+    background: var(--bg);
+    flex-direction: column;
+    z-index: 50;
+  }
+  .result-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    max-width: 540px;
+    width: 100%;
+    padding: 32px 24px;
+  }
+  .result-header {
+    text-align: center;
+  }
+  .result-round-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+    margin-bottom: 8px;
+  }
+  .result-distance {
+    font-family: 'Space Mono', monospace;
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1;
+  }
+  .result-distance span { font-size: 20px; color: var(--muted); margin-left: 6px; }
+  .result-points {
+    font-family: 'Space Mono', monospace;
+    font-size: 18px;
+    color: var(--accent2);
+    margin-top: 6px;
+  }
+  #result-map { width: 100%; height: 240px; border-radius: 8px; overflow: hidden; border: 1px solid var(--border); }
+  .result-actions {
+    display: flex; gap: 10px; width: 100%;
+  }
+  .btn-secondary {
+    flex: 1;
+    padding: 12px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: border-color 0.15s;
+  }
+  .btn-secondary:hover { border-color: var(--accent); }
+
+  /* ── FINAL SCREEN ── */
+  #final-screen {
+    background: var(--bg);
+    flex-direction: column;
+    z-index: 60;
+  }
+  .final-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    max-width: 420px;
+    padding: 40px 24px;
+    text-align: center;
+  }
+  .final-title {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+  }
+  .final-score-big {
+    font-family: 'Space Mono', monospace;
+    font-size: 72px;
+    font-weight: 700;
+    color: var(--accent2);
+    line-height: 1;
+  }
+  .final-score-label {
+    font-size: 14px;
+    color: var(--muted);
+    margin-top: 4px;
+  }
+  .final-breakdown {
+    width: 100%;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .breakdown-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 16px;
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    border-bottom: 1px solid var(--border);
+  }
+  .breakdown-row:last-child { border-bottom: none; }
+  .breakdown-row .label { color: var(--muted); }
+  .breakdown-row .val { color: var(--text); }
+  .breakdown-row .pts { color: var(--accent2); }
+  .grade {
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+  .grade strong { color: var(--text); }
+
+  /* Error toast */
+  #error-toast {
+    position: fixed;
+    bottom: 20px; left: 50%; transform: translateX(-50%);
+    background: var(--danger);
+    color: #fff;
+    font-size: 13px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    z-index: 999;
+    display: none;
+    white-space: nowrap;
+  }
+</style>
+</head>
+<body>
+
+<!-- START SCREEN -->
+<div id="start-screen" class="screen">
+  <div class="start-inner">
+    <div class="logo-mark">GW</div>
+    <div>
+      <div class="start-title">Geo<span>Wander</span></div>
+    </div>
+    <p class="start-subtitle">Street-level geography guessing powered by Mapillary's free, open imagery — no Google required.</p>
+
+    <div style="width:100%">
+      <div class="rounds-label" style="margin-bottom:8px">ROUNDS</div>
+      <div class="rounds-row">
+        <button class="round-btn" data-rounds="3">3</button>
+        <button class="round-btn active" data-rounds="5">5</button>
+        <button class="round-btn" data-rounds="10">10</button>
+      </div>
+    </div>
+
+    <button class="btn-primary" id="start-btn">Start Game</button>
+  </div>
+</div>
+
+<!-- GAME SCREEN -->
+<div id="game-screen" class="screen hidden">
+  <div id="viewer"></div>
+
+  <div class="hud-top">
+    <div class="hud-game-name">GEOWANDER</div>
+    <div class="hud-round" id="hud-round">Round 1 / 5</div>
+    <div class="hud-score" id="hud-score">0 pts</div>
+  </div>
+
+  <div id="map-panel">
+    <div class="map-panel-header">
+      <span class="map-panel-title">PLACE YOUR GUESS</span>
+      <button class="map-expand-btn" id="expand-btn" title="Expand map">⤢</button>
+    </div>
+    <div id="guess-map"></div>
+    <div class="map-footer">
+      <span class="guess-hint" id="guess-hint">Click the map to place a pin</span>
+      <button class="btn-guess" id="guess-btn" disabled>Guess</button>
+    </div>
+  </div>
+
+
+</div>
+
+<!-- RESULT SCREEN -->
+<div id="result-screen" class="screen hidden">
+  <div class="result-inner">
+    <div class="result-header">
+      <div class="result-round-label" id="result-round-label">ROUND 1 RESULT</div>
+      <div class="result-distance" id="result-distance">—<span>km</span></div>
+      <div class="result-points" id="result-points">+0 pts</div>
+    </div>
+    <div id="result-map"></div>
+    <div class="result-actions">
+      <button class="btn-secondary" id="next-btn">Next Round</button>
+    </div>
+  </div>
+</div>
+
+<!-- FINAL SCREEN -->
+<div id="final-screen" class="screen hidden">
+  <div class="final-inner">
+    <div class="final-title">Game Over</div>
+    <div>
+      <div class="final-score-big" id="final-score">0</div>
+      <div class="final-score-label" id="final-score-label">out of 25,000 points</div>
+    </div>
+    <div class="final-breakdown" id="final-breakdown"></div>
+    <div class="grade" id="final-grade"></div>
+    <button class="btn-primary" id="play-again-btn">Play Again</button>
+  </div>
+</div>
+
+<div id="error-toast"></div>
+
+<script>
+// ─── Baked-in token ───
+const TOKEN = 'MLY|29627809343575205|2fdb3907b68208dba2542fa9fd554b29';
+
+// ─── City pool — coords only, IDs fetched live via Image Radius Search API ───
+// Docs: https://www.mapillary.com/developer/api-documentation#image-radius-search
+// Added April 2026: lat + lng + radius (max 50m) + limit. Returns best pano nearby.
+// Multiple street-level spots per city so we have fallbacks if one is barren.
+const CITY_POOL = [
+  { lat: 48.8584,  lng: 2.2945,   label: "Paris, France" },        // near Eiffel Tower
+  { lat: 35.6895,  lng: 139.6917, label: "Tokyo, Japan" },
+  { lat: 40.7549,  lng: -73.9840, label: "New York, USA" },
+  { lat: 51.5007,  lng: -0.1246,  label: "London, UK" },
+  { lat: -33.8699, lng: 151.2082, label: "Sydney, Australia" },
+  { lat: 52.5200,  lng: 13.4050,  label: "Berlin, Germany" },      // confirmed in API docs
+  { lat: 41.8902,  lng: 12.4922,  label: "Rome, Italy" },
+  { lat: 59.9139,  lng: 10.7522,  label: "Oslo, Norway" },
+  { lat: 55.6761,  lng: 12.5683,  label: "Copenhagen, Denmark" },
+  { lat: 37.9755,  lng: 23.7348,  label: "Athens, Greece" },
+  { lat: 48.2082,  lng: 16.3738,  label: "Vienna, Austria" },
+  { lat: 50.0875,  lng: 14.4213,  label: "Prague, Czechia" },
+  { lat: 52.2297,  lng: 21.0122,  label: "Warsaw, Poland" },
+  { lat: 47.4979,  lng: 19.0402,  label: "Budapest, Hungary" },
+  { lat: 60.1699,  lng: 24.9384,  label: "Helsinki, Finland" },
+  { lat: 59.3326,  lng: 18.0649,  label: "Stockholm, Sweden" },
+  { lat: 1.2847,   lng: 103.8610, label: "Singapore" },
+  { lat: 37.5665,  lng: 126.9780, label: "Seoul, South Korea" },
+  { lat: -23.5614, lng: -46.6558, label: "São Paulo, Brazil" },
+  { lat: 19.4269,  lng: -99.1676, label: "Mexico City, Mexico" },
+  { lat: 43.6532,  lng: -79.3832, label: "Toronto, Canada" },
+  { lat: 41.0082,  lng: 28.9784,  label: "Istanbul, Turkey" },
+  { lat: 13.7465,  lng: 100.5347, label: "Bangkok, Thailand" },
+  { lat: 3.1579,   lng: 101.7123, label: "Kuala Lumpur, Malaysia" },
+  { lat: 55.7514,  lng: 37.6184,  label: "Moscow, Russia" },
+  { lat: 31.2231,  lng: 121.4737, label: "Shanghai, China" },
+  { lat: -34.6118, lng: -58.3960, label: "Buenos Aires, Argentina" },
+  { lat: 45.4654,  lng: 9.1859,   label: "Milan, Italy" },
+  { lat: 43.2965,  lng: 5.3698,   label: "Marseille, France" },
+  { lat: 53.3498,  lng: -6.2603,  label: "Dublin, Ireland" },
+];
+
+// ─── Fetch best panorama near a point using Image Radius Search (April 2026 API) ───
+// Returns image ID string, or null if none found.
+async function fetchNearbyPano(lat, lng) {
+  const url = `https://graph.mapillary.com/images?access_token=${TOKEN}` +
+    `&fields=id&lat=${lat}&lng=${lng}&radius=50&limit=5&is_pano=true`;
+  try {
+    const res = await fetch(url, {
+      headers: { 'Authorization': `OAuth ${TOKEN}` }
+    });
+    if (!res.ok) return null;
+    const data = await res.json();
+    if (data.data && data.data.length > 0) {
+      return data.data[Math.floor(Math.random() * data.data.length)].id;
+    }
+  } catch(e) {}
+  // Fallback: widen to max 50m (same, the API max) but try without is_pano
+  try {
+    const url2 = `https://graph.mapillary.com/images?access_token=${TOKEN}` +
+      `&fields=id&lat=${lat}&lng=${lng}&radius=50&limit=5`;
+    const res2 = await fetch(url2, {
+      headers: { 'Authorization': `OAuth ${TOKEN}` }
+    });
+    if (!res2.ok) return null;
+    const data2 = await res2.json();
+    if (data2.data && data2.data.length > 0) return data2.data[0].id;
+  } catch(e) {}
+  return null;
+}
+
+// ─── State ───
+let state = {
+  totalRounds: 5,
+  currentRound: 0,
+  totalScore: 0,
+  roundScores: [],
+  roundDistances: [],
+  locations: [],   // {id, lat, lng, label} resolved at game start
+  guessLatLng: null,
+  viewer: null,
+  guessMap: null,
+  guessMarker: null,
+};
+
+// ─── DOM refs ───
+const $ = id => document.getElementById(id);
+const startScreen = $('start-screen');
+const gameScreen = $('game-screen');
+const resultScreen = $('result-screen');
+const finalScreen = $('final-screen');
+const startBtn = $('start-btn');
+
+// ─── Round btn selection ───
+let selectedRounds = 5;
+document.querySelectorAll('.round-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.round-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    selectedRounds = parseInt(btn.dataset.rounds);
+  });
+});
+
+// ─── Start game: shuffle city pool, fetch live IDs via radius search ───
+startBtn.addEventListener('click', async () => {
+  startBtn.disabled = true;
+  startBtn.textContent = 'Finding imagery…';
+
+  state.totalRounds = selectedRounds;
+  state.currentRound = 0;
+  state.totalScore = 0;
+  state.roundScores = [];
+  state.roundDistances = [];
+  state.locations = [];
+
+  show(gameScreen);
+  hide(startScreen);
+
+  const shuffled = [...CITY_POOL].sort(() => Math.random() - 0.5);
+  const candidates = shuffled.slice(0, Math.min(state.totalRounds * 2, shuffled.length));
+
+  for (const city of candidates) {
+    if (state.locations.length >= state.totalRounds) break;
+    startBtn.textContent = `Finding locations… ${state.locations.length + 1} / ${state.totalRounds}`;
+    const id = await fetchNearbyPano(city.lat, city.lng);
+    if (id) state.locations.push({ id, lat: city.lat, lng: city.lng, label: city.label });
+  }
+
+  if (state.locations.length === 0) {
+    hide(gameScreen);
+    show(startScreen);
+    showError('No imagery found — check your token and try again.');
+    startBtn.disabled = false;
+    startBtn.textContent = 'Start Game';
+    return;
+  }
+
+  // If we got fewer than requested, just play with what we have
+  state.totalRounds = state.locations.length;
+  startBtn.disabled = false;
+  startBtn.textContent = 'Start Game';
+  startRound();
+});
+
+// ─── Show/hide helpers ───
+function show(el) { el.classList.remove('hidden'); }
+function hide(el) { el.classList.add('hidden'); }
+
+// ─── Start a round ───
+function startRound() {
+
+  state.guessLatLng = null;
+  $('guess-btn').disabled = true;
+  $('guess-hint').textContent = 'Click the map to place a pin';
+
+  $('hud-round').textContent = `Round ${state.currentRound + 1} / ${state.totalRounds}`;
+  $('hud-score').textContent = `${state.totalScore.toLocaleString()} pts`;
+
+  const loc = state.locations[state.currentRound];
+
+  // Init or update Mapillary viewer
+  if (!state.viewer) {
+    state.viewer = new mapillary.Viewer({
+      accessToken: TOKEN,
+      container: 'viewer',
+      imageId: loc.id,
+      component: { cover: false }
+    });
+    state.viewer.on('load', () => fadeOutLoading());
+    state.viewer.on('dataloading', (e) => {
+      if (!e.loading) fadeOutLoading();
+    });
+  } else {
+    state.viewer.moveTo(loc.id)
+      .then(() => fadeOutLoading())
+      .catch(async () => {
+        // ID went stale — try to fetch a fresh one for the same city
+        const newId = await fetchNearbyPano(loc.lat, loc.lng);
+        if (newId) {
+          state.locations[state.currentRound].id = newId;
+          state.viewer.moveTo(newId)
+            .then(() => fadeOutLoading())
+            .catch(() => {
+              showError('Could not load location — click Next Round to skip.');
+              fadeOutLoading();
+            });
+        } else {
+          showError('Could not load location — click Next Round to skip.');
+          fadeOutLoading();
+        }
+      });
+  }
+
+  // Init guess map
+  if (!state.guessMap) {
+    state.guessMap = L.map('guess-map', {
+      center: [20, 0], zoom: 1,
+      zoomControl: false
+    });
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+      attribution: '© Esri © OpenStreetMap contributors',
+      maxZoom: 19
+    }).addTo(state.guessMap);
+    L.control.zoom({ position: 'topright' }).addTo(state.guessMap);
+    state.guessMap.on('click', onMapClick);
+  } else {
+    if (state.guessMarker) {
+      state.guessMap.removeLayer(state.guessMarker);
+      state.guessMarker = null;
+    }
+    state.guessMap.setView([20, 0], 1);
+  }
+}
+
+function startSkipTimer() {}
+function clearSkipTimer() {}
+function fadeOutLoading() {}
+
+// ─── Map click ───
+function onMapClick(e) {
+  state.guessLatLng = e.latlng;
+  if (state.guessMarker) state.guessMap.removeLayer(state.guessMarker);
+
+  state.guessMarker = L.circleMarker(e.latlng, {
+    radius: 7,
+    fillColor: '#58a6ff',
+    color: '#fff',
+    weight: 2,
+    fillOpacity: 1
+  }).addTo(state.guessMap);
+
+  $('guess-btn').disabled = false;
+  $('guess-hint').textContent = 'Ready to submit';
+}
+
+// ─── Expand map ───
+$('expand-btn').addEventListener('click', () => {
+  $('map-panel').classList.toggle('expanded');
+  setTimeout(() => state.guessMap && state.guessMap.invalidateSize(), 260);
+});
+
+// ─── Submit guess ───
+$('guess-btn').addEventListener('click', submitGuess);
+
+function submitGuess() {
+  if (!state.guessLatLng) return;
+
+  const loc = state.locations[state.currentRound];
+  const dist = haversine(state.guessLatLng.lat, state.guessLatLng.lng, loc.lat, loc.lng);
+  const pts = calcScore(dist);
+
+  state.totalScore += pts;
+  state.roundScores.push(pts);
+  state.roundDistances.push(dist);
+
+  showResult(dist, pts, loc, state.guessLatLng);
+}
+
+// ─── Haversine distance (km) ───
+function haversine(lat1, lng1, lat2, lng2) {
+  const R = 6371;
+  const dLat = (lat2 - lat1) * Math.PI / 180;
+  const dLng = (lng2 - lng1) * Math.PI / 180;
+  const a = Math.sin(dLat/2)**2 + Math.cos(lat1*Math.PI/180)*Math.cos(lat2*Math.PI/180)*Math.sin(dLng/2)**2;
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+}
+
+// ─── Score calc: 5000 max, exponential decay ───
+function calcScore(distKm) {
+  if (distKm < 0.025) return 5000;
+  return Math.round(5000 * Math.exp(-distKm / 2000));
+}
+
+// ─── Show round result ───
+let resultMap = null;
+
+function showResult(dist, pts, actual, guess) {
+  show(resultScreen);
+
+  $('result-round-label').textContent = `ROUND ${state.currentRound + 1} RESULT`;
+
+  const distDisplay = dist < 1 ? `${Math.round(dist * 1000)} m` : `${Math.round(dist).toLocaleString()} km`;
+  const distNum = dist < 1 ? Math.round(dist * 1000) : Math.round(dist);
+  const distUnit = dist < 1 ? 'm' : 'km';
+  $('result-distance').innerHTML = `${distNum.toLocaleString()}<span>${distUnit}</span>`;
+  $('result-points').textContent = `+${pts.toLocaleString()} pts`;
+
+  const isLast = state.currentRound === state.totalRounds - 1;
+  $('next-btn').textContent = isLast ? 'See Final Score' : 'Next Round';
+
+  // Build result map
+  if (resultMap) { resultMap.remove(); resultMap = null; }
+
+  resultMap = L.map('result-map', { zoomControl: false });
+  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+    attribution: '© Esri © OpenStreetMap contributors',
+    maxZoom: 19
+  }).addTo(resultMap);
+
+  // Actual location marker
+  const actualIcon = L.divIcon({
+    html: `<div style="width:14px;height:14px;border-radius:50%;background:#3fb950;border:2px solid #fff"></div>`,
+    iconSize: [14, 14], iconAnchor: [7, 7], className: ''
+  });
+  const guessIcon = L.divIcon({
+    html: `<div style="width:14px;height:14px;border-radius:50%;background:#58a6ff;border:2px solid #fff"></div>`,
+    iconSize: [14, 14], iconAnchor: [7, 7], className: ''
+  });
+
+  L.marker([actual.lat, actual.lng], { icon: actualIcon })
+    .bindTooltip(`📍 ${actual.label}`, { permanent: false })
+    .addTo(resultMap);
+
+  L.marker([guess.lat, guess.lng], { icon: guessIcon })
+    .bindTooltip('Your guess', { permanent: false })
+    .addTo(resultMap);
+
+  L.polyline([[actual.lat, actual.lng], [guess.lat, guess.lng]], {
+    color: '#8b949e', dashArray: '6,4', weight: 1.5
+  }).addTo(resultMap);
+
+  const bounds = L.latLngBounds([[actual.lat, actual.lng], [guess.lat, guess.lng]]);
+  resultMap.fitBounds(bounds.pad(0.3));
+}
+
+$('next-btn').addEventListener('click', () => {
+  hide(resultScreen);
+  state.currentRound++;
+  if (state.currentRound >= state.totalRounds) {
+    showFinal();
+  } else {
+    startRound();
+  }
+});
+
+// ─── Final screen ───
+function showFinal() {
+  show(finalScreen);
+
+  $('final-score').textContent = state.totalScore.toLocaleString();
+  $('final-score-label').textContent = `out of ${(state.totalRounds * 5000).toLocaleString()} points`;
+
+  const rows = state.locations.map((loc, i) => {
+    const d = state.roundDistances[i];
+    const dStr = d < 1 ? `${Math.round(d*1000)}m` : `${Math.round(d).toLocaleString()}km`;
+    return `<div class="breakdown-row">
+      <span class="label">Round ${i+1} · ${loc.label}</span>
+      <span class="val">${dStr}</span>
+      <span class="pts">+${state.roundScores[i].toLocaleString()}</span>
+    </div>`;
+  }).join('');
+  $('final-breakdown').innerHTML = rows;
+
+  const pct = state.totalScore / (state.totalRounds * 5000);
+  let grade, msg;
+  if (pct >= 0.95) { grade = 'Expert'; msg = 'Uncanny — you barely missed a beat.'; }
+  else if (pct >= 0.80) { grade = 'Seasoned'; msg = 'Strong spatial memory. You know your cities.'; }
+  else if (pct >= 0.60) { grade = 'Traveller'; msg = 'Solid effort. A few more trips around the globe.'; }
+  else if (pct >= 0.35) { grade = 'Tourist'; msg = 'You got the continent right, mostly.'; }
+  else { grade = 'Lost'; msg = 'Geography lessons recommended.'; }
+
+  $('final-grade').innerHTML = `<strong>${grade}</strong> — ${msg}`;
+}
+
+$('play-again-btn').addEventListener('click', () => {
+  hide(finalScreen);
+  show(startScreen);
+  if (resultMap) { resultMap.remove(); resultMap = null; }
+  if (state.viewer) { state.viewer = null; $('viewer').innerHTML = ''; }
+  if (state.guessMap) { state.guessMap.remove(); state.guessMap = null; state.guessMarker = null; }
+  $('start-btn').disabled = false;
+  $('start-btn').textContent = 'Start Game';
+});
+
+// ─── Error toast ───
+function showError(msg) {
+  const t = $('error-toast');
+  t.textContent = msg;
+  t.style.display = 'block';
+  setTimeout(() => { t.style.display = 'none'; }, 4000);
+}
+</script>
+</body>
+</html>
