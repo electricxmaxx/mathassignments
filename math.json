@@ -550,6 +550,11 @@
     "image": "https://ik.imagekit.io/doyourwork/images%20(83).jpg"
   },
   {
+    "title": "Wheely",
+    "url": "wheely.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(84).jpg"
+  },
+  {
     "title": "Wheely 2",
     "url": "wheely2.html",
     "image": "https://ik.imagekit.io/doyourwork/images%20(85).jpg"
@@ -580,9 +585,9 @@
     "image": "https://ik.imagekit.io/doyourwork/images%20(90).jpg"
   },
   {
-    "title": "Wheely",
-    "url": "wheely.html",
-    "image": "https://ik.imagekit.io/doyourwork/images%20(84).jpg"
+    "title": "Wheely 8",
+    "url": "wheely8.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20(91).jpg"
   },
   {
     "title": "FNF vs Imposter",
@@ -628,11 +633,6 @@
     "title": "Minecraft 26.2 (DYLAN CLIENT)",
     "url": "dylanclient-26.3-r2-music-jsdelivr.html",
     "image": "https://ik.imagekit.io/doyourwork/og.jpg"
-  },
-  {
-    "title": "Wheely 8",
-    "url": "wheely8.html",
-    "image": "https://ik.imagekit.io/doyourwork/images%20(91).jpg"
   },
   {
     "title": "Dino Run",
@@ -865,7 +865,7 @@
     "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181822.962.jpg"
   },
   {
-    "title": "Tung Tung Tung Sahur obby",
+    "title": "Tung Tung Tung Sahur Obby",
     "url": "Tungtungtungsahurobby.html",
     "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-05T181854.428.jpg"
   },
@@ -1094,145 +1094,169 @@
     "url": "ragdollarchers.html",
     "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-06T182659.481.jpg"
   },
-    {
+  {
+    "title": "Gladihoppers",
+    "url": "gladihoppers.html",
+    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-06T182710.388.jpg"
+  },
+  {
     "title": "Balatro",
     "url": "balatro.html",
     "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-07T094510.347.jpg"
   },
-      {
+  {
     "title": "Lobotomy Corporation",
     "url": "lobot.html",
     "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-07T095352.792.jpg"
   },
-        {
-    "title": "Geo Guessr (vibecode editon)",
+  {
+    "title": "Geo Guessr (Vibecode Edition)",
     "url": "geoguesseraislop.html",
     "image": "https://ik.imagekit.io/rckdebdbt/images%20-%202026-11-08T203601.163.jpg"
   },
-          {
+  {
     "title": "Celeste",
     "url": "Celeste PICO.html",
     "image": "https://ik.imagekit.io/rckdebdbt/images%20-%202026-11-11T203416.475.jpg?updatedAt=1794450888797"
   },
-          {
+  {
     "title": "Ninja vs Evil Corp",
     "url": "Ninja vs EvilCorp.html",
     "image": "https://ik.imagekit.io/rckdebdbt/images%20-%202026-11-11T203436.067.jpg?updatedAt=1794450887676"
   },
-            {
+  {
     "title": "Solar Smash",
     "url": "solarsmash.html",
     "image": "https://ik.imagekit.io/rckdebdbt/images%20-%202026-11-12T174450.115.jpg"
   },
-              {
+  {
     "title": "Pokemon Unbound",
     "url": "pokeunbound.html",
     "image": "https://ik.imagekit.io/rckdebdbt/images%20-%202026-11-12T180706.624.jpg"
   },
-                {
+  {
     "title": "1 Date 1 Danger",
     "url": "1d1d.html",
     "image": "https://ik.imagekit.io/rckdebdbt/images%20-%202026-11-12T190316.236.jpg"
   },
-                  {
+  {
     "title": "Free Rudolph",
     "url": "https://cdn.gitdelivr.in/gh/learningapi/mathassignments/main/freer.html",
     "image": "https://ik.imagekit.io/rckdebdbt/Screenshot%202026-11-12%20190228.png"
   },
-                    {
+  {
     "title": "Bad Parenting",
     "url": "badparenting.html",
     "image": "https://ik.imagekit.io/rckdebdbt/images%20-%202026-11-12T193531.334.jpg"
   },
-                      {
+  {
     "title": "Karlson",
     "url": "karlson.html",
     "image": "https://ik.imagekit.io/rckdebdbt/download%20(15).jpg"
   },
-                        {
+  {
     "title": "Granny Nightmare",
     "url": "clgrannynightmare.html",
     "image": "https://ik.imagekit.io/rckdebdbt/images%20-%202026-11-12T202153.824.jpg"
   },
-                        {
+  {
     "title": "Granny Creepy",
     "url": "clgrannycreepy.html",
     "image": "https://ik.imagekit.io/rckdebdbt/images%20-%202026-11-12T202142.583.jpg"
   },
-                          {
+  {
     "title": "Granny 2",
     "url": "clgranny22.html",
     "image": "https://ik.imagekit.io/rckdebdbt/images%20-%202026-11-12T202036.159.jpg"
   },
-                          {
+  {
     "title": "Granny 3",
     "url": "clgranny3.html",
     "image": "https://ik.imagekit.io/rckdebdbt/images%20-%202026-11-12T202021.401.jpg"
   },
-                            {
+  {
     "title": "Appel",
     "url": "appel.html",
     "image": "https://ik.imagekit.io/o5ew40kbv/images%20-%202026-11-13T195435.646.jpg"
   },
-                              {
+  {
     "title": "Academy Tale",
     "url": "academytale.html",
     "image": "https://ik.imagekit.io/o5ew40kbv/images%20-%202026-11-13T195513.802.jpg"
   },
-                                {
+  {
     "title": "A Dance of Fire and Ice",
     "url": "adanceoffireandice.html",
     "image": "https://ik.imagekit.io/o5ew40kbv/images%20-%202026-11-13T195552.805.jpg"
   },
-                                  {
+  {
     "title": "Animal Crossing",
     "url": "animalcrossing.html",
     "image": "https://ik.imagekit.io/o5ew40kbv/images%20-%202026-11-13T195649.347.jpg"
   },
-                                    {
+  {
     "title": "A Small World Cup",
     "url": "asmallworldcup.html",
     "image": "https://ik.imagekit.io/o5ew40kbv/images%20-%202026-11-13T195735.072.jpg"
   },
-                                     {
+  {
     "title": "Wordle Unlimited",
     "url": "wordle.html",
     "image": "https://ik.imagekit.io/rckdebdbt/images%20(14).png"
   },
-                                       {
+  {
     "title": "GTA 3",
     "url": "gta3.html",
     "image": "https://ik.imagekit.io/rckdebdbt/EE0_FEFXflkgVgdiHT0MUT4GRx40BDFYHjgfOgwXKAtfQjcEN1ISORMnFlw4Fx0OPgA3RQNjFzURV2RcB1x_BjxQ.png"
   },
-                                        {
+  {
     "title": "Totally Accurate Battle Simulator",
     "url": "Totally Accurate Battle Simulator (TABS).html",
     "image": "https://ik.imagekit.io/rckdebdbt/EE0_FEFXflkgVgdiHT0MUT4GRx40BDFYHjgfOgwXKAtfQjcEN1ISORMnFlw4Fx0OPgA3RQNjFzURV2RcAFp_BjxQ.png"
   },
-                                          {
+  {
     "title": "Terraria",
     "url": "Terraria (1).html",
     "image": "https://ik.imagekit.io/rckdebdbt/images%20-%202026-11-17T193029.463.jpg"
   },
-                                            {
+  {
     "title": "Windows XP",
     "url": "clwindowsxpfull fullscreen.html",
     "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-19T204724.856.jpg"
   },
-                                              {
+  {
     "title": "Escape Road",
     "url": "escaperoad.html",
     "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-19T204843.329.jpg"
   },
-                                                {
+  {
     "title": "Draw a Perfect Circle",
     "url": "perfectcircle.html",
     "image": "https://ik.imagekit.io/doyourwork/Screenshot%202026-11-20%20191802.png"
   },
   {
-    "title": "Gladihoppers",
-    "url": "gladihoppers.html",
-    "image": "https://ik.imagekit.io/doyourwork/images%20-%202026-11-06T182710.388.jpg"
+    "title": "Buckshot Roulette",
+    "url": "Buckshot_Roulette.html",
+    "image": "https://ik.imagekit.io/rckdebdbt/EE0_FEFXflkgVgdiHT0MUT4GRx40BDFYHjgfOgwXKAtfQjcEN1ISORMnFlw4Fx0OPgA3RQNjFzURV2RWAlh_BjxQ.png"
+  },
+  {
+    "title": "Stickman Hook",
+    "url": "Stickman Hook.html",
+    "image": "https://ik.imagekit.io/rckdebdbt/images%20-%202026-11-23T173700.237.jpg"
+  },
+  {
+    "title": "Magic Tiles 3",
+    "url": "magictiles3.html",
+    "image": "https://ik.imagekit.io/rckdebdbt/images%20-%202026-11-23T173711.310.jpg"
+  },
+  {
+    "title": "Baldi's Basics Classic Remastered",
+    "url": "Baldis_Basics_Classic_Remastered.html",
+    "image": "https://ik.imagekit.io/rckdebdbt/images%20(15).png"
+  },
+  {
+    "title": "Baldi's Basics",
+    "url": "baldisbasics.html",
+    "image": "https://ik.imagekit.io/rckdebdbt/images%20-%202026-11-23T173820.890.jpg"
   }
 ]
-
