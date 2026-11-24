@@ -63,7 +63,7 @@ const statusEl = document.getElementById('status');
 
 function updateStatus(currentBytes) {
     const currentMB = (currentBytes / 1048576).toFixed(2);
-    statusEl.innerHTML = `<i class="fas fa-sync-alt fa-spin"></i> LOADING: ${currentMB} / ${TOTAL_MB} MB`;
+    statusEl.innerHTML = `<i class="fas fa-sync-alt fa-spin"></i> 4mathtutoring downloading assets: ${currentMB} / ${TOTAL_MB} MB`;
 }
 
 window.fetch = function(url, ...args) {
